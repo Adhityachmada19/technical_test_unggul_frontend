@@ -15,7 +15,7 @@ import PropTypes from "prop-types";
 import Cookies from "js-cookie";
 
 //hook link
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 //import toats
 import toast from "react-hot-toast";
@@ -132,23 +132,6 @@ const LayoutParent = ({ children }) => {
                     className="fw-bold"
                     id="basic-nav-dropdown"
                   >
-                    <NavDropdown.Item as={Link} to="/" target="_blank">
-                      <i className="fa fa-external-link-alt me-2"></i> Visit Web
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item as={Link} to="/admin/categories">
-                      <i className="fa fa-folder me-2"></i> Categories
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/admin/places">
-                      <i className="fa fa-map-marked-alt me-2"></i> Places
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/admin/sliders">
-                      <i className="fa fa-images me-2"></i> Sliders
-                    </NavDropdown.Item>
-                    <NavDropdown.Item as={Link} to="/admin/users">
-                      <i className="fa fa-users me-2"></i> Users
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
                     <NavDropdown.Item onClick={logoutHandler}>
                       <i className="fa fa-sign-out-alt me-2"></i> Logout
                     </NavDropdown.Item>
